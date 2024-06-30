@@ -1,0 +1,411 @@
+<!-- 38644 - Israr Rashid -->
+<!-- Lab Task Assignment - css garden 221 -->
+<!-- good view at 14 inch screen -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --color-primary:rgb(208, 118, 176);
+            --color-secondary: 	#ffe6e6;
+            --color-blue:rgb(0, 204, 255);
+            --color-tometo: rgb(255, 85, 0);
+            --color-black:rgb(13, 44, 64);
+            --color-white:#fff;
+            --color-sea-green:rgba(0, 217, 213, 0.8);
+        }
+        *{
+            font-family: sans-serif;
+            margin: 0;
+
+        }
+        .row1{
+            height: 140vh;
+            display: flex;
+        }
+        .row1__col1{
+            width: 20%;
+            height: 140vh;
+        }
+        .bg-pink{
+            background: var(--color-primary);
+        }
+        .bg-black{
+            background: var(--color-black);
+        }
+        .bg-tometo{
+            background: var(--color-tometo);
+        }
+        .bg-blue{
+            background: var(--color-blue);
+        }
+        .bg-green{
+            background: var(--color-sea-green);
+        }
+        .row1__col1--p{
+            transform: rotate(-90deg);
+            color: var(--color-white);
+            margin-top: 70px;
+            margin-left: -50px;
+            width: 60%;
+            font-size: .8rem;
+            font-weight: bold;
+        }
+        .row1__col1--h2{
+            color: var(--color-white);
+            font-size: 2.5rem;
+            margin-top: 240px;
+            margin-left: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .row1__col1--img{
+            width: 100%;
+        }
+        .row1__col1--content{
+            height: 140vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .row1__col2{
+            width: 60%;
+            height: 140vh;
+        }
+        .row1__col2--row1{
+            width: 100%;
+            height: 70vh;
+        }
+        .row1__col2--row2{
+            width: 100%;
+            height: 45vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* margin-top: -140px; */
+        }
+        .row1__col2--row1-content{
+            width: 50%;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 30px;
+            margin-top: 150px;
+        }
+        .row1__col2--content-p{
+            margin: 10px;
+            color: var(--color-white);
+            font-size: 1rem;
+        }
+        .row1__col2--row2-content{
+            width: 35%;
+            height: 45vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+        .row1__col2--row2-img{
+            width: 100%;
+            height: 44vh;
+        }
+        .row1__col2--row2-img-2{
+            position: absolute;
+            width: 20%;
+        }
+        /* row 2 starts */
+        .row2{
+            background: var(--color-secondary);
+            width: 100%;
+            height: 86vh;
+        }
+        .row3{
+            width: 100%;
+            height: 220vh;
+        }
+        .row3 img{
+            width: 100%;
+            height: 220vh;
+        }
+        .row3__col{
+            width: 40%;
+            height: 113vh;
+            background: var(--color-black);
+            margin-top: 320px;
+            position: absolute;
+        }
+        .row3__col--content-p{
+            color: var(--color-secondary);
+            letter-spacing: 1px;
+            word-spacing: 10px;
+            line-height: 1.3;
+            padding-top: 60px;
+            padding-left: 80px;
+            padding-right: 110px;
+        }
+        .row4{
+            width: 100%;
+            height: 115vh;
+            background: var(--color-secondary);
+            display: flex;
+        }
+        .row4__col1{
+            width: 40%;
+            height: 85vh;
+            background: var(--color-secondary);
+            margin-top: -85px;
+            margin-left: 250px;
+            /* position: absolute; */
+        }
+        .row4__col1--content{
+            width: 100%;
+            height: 85vh;
+            margin: 30px;
+        }
+        .row4__col2{
+            width: 20%;
+            height: 193vh;
+            /* position: absolute; */
+            margin-top: -270px;
+        }
+        .row4__col2--image{
+            width: 100%;
+        }
+        .row4__col1--content-p{
+            letter-spacing: 1px;
+            word-spacing: 10px;
+            line-height: 1.3;
+            padding: 20px;
+        }
+        .row5{
+            width: 100%;
+            height: 108.1vh;
+            background: var(--color-secondary);
+            display: flex;
+            flex-direction: row;
+        }
+        .row5__col{
+            width: 33%;
+            /* border: solid; */
+        }
+        .row5__col--image{
+            width: 100%;
+        }
+        .row5__col--content-p{
+            letter-spacing: 1px;
+            word-spacing: 10px;
+            line-height: 1.3;
+            padding-top: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .row6{
+            width: 100%;
+            background-color:var(--color-primary);
+            height: 343vh;
+            display: flex;
+            flex-direction: row;
+        }
+        .row6__col{
+            width: 20%;
+            height: 180vh;
+            /* border: solid; */
+        }
+        .row6__col--heading{
+            /* border: solid; */
+            width: 100%;
+            height: 180vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-secondary);
+        }
+        .margin-top{
+            margin-top: 360px;
+        }
+        .row6__col-min-height{
+            height: 117vh;
+        }
+        .row6__col-max-height{
+            height: 280vh;
+        }
+        .row6__col--content{
+            width: 100%;
+            height: 180vh;
+            /* border: solid; */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .row6__col--content-1{
+            width: 100%;
+            height: 55vh;
+            /* border: solid; */
+        }
+        .row6__col--content-1 h1{
+            font-size: 6rem;
+            color:var(--color-secondary);
+            margin: 10px;
+            font-weight: normal;
+        }
+        .row6__col--content-1 p{
+            color: var(--color-secondary);
+            margin: 10px;
+        }
+        .row6__col--content-1__image{
+            width: 100%;
+            margin-top: 70px;
+        }
+    </style>
+</head>
+<body>
+    <div class="row1">
+        <div class="row1__col1 bg-pink">
+            <p class="row1__col1--p">CSS ZEN GARDEN</p>
+        </div>
+        <div class="row1__col1 bg-black">
+            <div class="row1__col1--content">
+                <h2 class="row1__col1--h2">The Beauty of CSS Design</h2>
+                <img class="row1__col1--img" src="public/images/circle 1.png" alt="circle 1">
+            </div>
+        </div>
+        <div class="row1__col2 bg-pink">
+            <div class="row1__col2--row1">
+                <div class="row1__col2--row1-content">
+                    <p class="row1__col2--content-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus ut minima culpa excepturi saepe sunt dolorum at impedit, animi aliquid.</p>
+                    <p class="row1__col2--content-p">download the example <u>html file</u> and <u>css file</u></p>
+                </div>
+            </div>
+            <div class="row1__col2--row2">
+                <div class="row1__col2--row2-content">
+                    <img class="row1__col2--row2-img" src="public/images/circle 2.png" alt="circle 2">
+                </div>
+                <div class="row1__col2--row2-content">
+                    <img class="row1__col2--row2-img-2" src="public/images/circle 3-1.png" alt="circle 4">
+                </div>
+                <div class="row1__col2--row2-content">
+                    <img class="row1__col2--row2-img" src="public/images/circle 4.png" alt="circle 4">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row2"></div>
+    <div class="row3">
+        <div class="row3__col">
+            <p class="row3__col--content-p">\Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro unde itaque sint dolor, consectetur reiciendis facere perspiciatis. Hic, libero dolorem deleniti porro quasi aliquid eos recusandae, officia obcaecati, velit earum beatae. Eum necessitatibus ea adipisci vero, rem possimus ipsam nobis non ex! Delectus modi consectetur praesentium veritatis quidem earum? Omnis possimus cumque doloribus provident ab, fugit neque facilis aperiam perferendis quod deserunt amet veritatis nam magni quaerat eveniet placeat eius ipsam, cupiditate quo maxime dicta! Veniam molestiae suscipit deserunt laborum ut nisi porro.</p>
+        </div>
+        <img src="public/images/house.jpg" alt="house image">
+    </div>
+    <div class="row4">
+        <div class="row4__col1">
+            <div class="row4__col1--content">
+                <h2>Participation</h2>
+                <p class="row4__col1--content-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum vel numquam quam alias saepe enim voluptates pariatur optio, explicabo consectetur ad ea, ipsum modi excepturi quibusdam nobis veniam ullam iste sint ex voluptatem doloribus, mollitia ratione nostrum. Optio deserunt odit at, impedit quas quae quis adipisci a praesentium in voluptatibus laborum commodi totam nobis error ab eveniet. Necessitatibus officiis at iure? Minus incidunt atque temporibus! Impedit non a voluptatem temporibus pariatur illo minus earum quos quasi voluptate omnis, odit vero sint amet tempora aliquid esse et dolorem. Reprehenderit libero repellat, nulla tenetur tempore, tempora veritatis dolorem nostrum, quaerat esse vitae.</p>
+            </div>
+        </div>
+        <div class="row4__col2">
+            <img class="row4__col2--image" src="public/images/circle 5.png" alt="">
+        </div>
+    </div>
+    <div class="row5">
+        <div class="row5__col">
+            <img class="row5__col--image" src="public/images/lamp-1.jpg" alt="lamp">
+        </div>
+        <div class="row5__col">
+            <p class="row5__col--content-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, possimus fugiat quam error, pariatur nam totam libero harum nisi alias illum quibusdam sit distinctio optio modi, hic voluptatum enim laborum? Asperiores harum officiis aliquam doloribus, cumque modi, quo quia veniam in porro fugiat, tempora ab saepe sit nesciunt veritatis dolor?</p>
+            <p class="row5__col--content-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aliquam delectus adipisci odit. Quos, aliquid. Perferendis nostrum minima, doloremque excepturi tempora tempore quia totam. Amet at quasi, nam impedit, sit natus, mollitia aliquam aliquid voluptas neque in similique autem molestiae? A earum esse rerum porro mollitia quae explicabo quibusdam error?</p>
+        </div>
+        <div class="row5__col">
+            <p class="row5__col--content-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, possimus fugiat quam error, pariatur nam totam libero harum nisi alias illum quibusdam sit distinctio optio modi, hic voluptatum enim laborum? Asperiores harum officiis aliquam doloribus, cumque modi, quo quia veniam in porro fugiat, tempora ab saepe sit nesciunt veritatis dolor?</p>
+            <p class="row5__col--content-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aliquam delectus adipisci odit. Quos, aliquid. Perferendis nostrum minima, doloremque excepturi tempora tempore quia totam. Amet at quasi, nam impedit, sit natus, mollitia aliquam aliquid voluptas neque in similique autem molestiae? A earum esse rerum porro mollitia quae explicabo quibusdam error?</p>
+        </div>
+    </div>
+    <div class="row6">
+        <div class="row6__col bg-pink">
+            <div class="row6__col--heading">
+                <h2>Select a Design:</h2>
+            </div>
+        </div>
+        <div class="row6__col bg-black">
+            <div class="row6__col--content">
+                <div class="row6__col--content-1">
+                    <h1>1</h1>
+                    <p>Mid Century Modern</p>
+                    <p>by</p>
+                    <p>Andrew Lohman</p>
+                </div>
+                <div class="row6__col--content-1">
+                    <h1>5</h1>
+                    <p>Screen Filler</p>
+                    <p>by</p>
+                    <p>Elliot Jay Stock</p>
+                </div>
+            </div>
+        </div>
+        <div class="row6__col bg-tometo margin-top row6__col-min-height">
+            <div class="row6__col--content-1">
+                <h1>2</h1>
+                <p>Garments</p>
+                <p>by</p>
+                <p>Dan Mall</p>
+            </div>
+            <div class="row6__col--content-1">
+                <h1>6</h1>
+                <p>Fountain Kiss</p>
+                <p>by</p>
+                <p>Jeremy Carlson</p>
+            </div>
+        </div>
+        <div class="row6__col bg-green margin-top row6__col-max-height">
+                <div class="row6__col--content-1">
+                    <h1>3</h1>
+                    <p>Street</p>
+                    <p>by</p>
+                    <p>steffen knoeller</p>
+                </div>
+                <div class="row6__col--content-1">
+                    <h1>7</h1>
+                    <p>A robot named Jimmy</p>
+                    <p>by</p>
+                    <p>meltmedia</p>
+                </div>
+
+                <div class="row6__col--content-1">
+                    <p>Next Designs›</p>
+                    <p>View All Designs</p>
+                </div>
+                
+                <div class="row6__col--content-1">
+                    <p>View This Design’s CSS</p>
+                    <p>CSS Resources</p>
+                    <p>FAQ</p>
+                    <p>Submit a Design</p>
+                    <p>Translations</p>
+                </div>
+
+                <div class="row6__col--content-1">
+                    <img class="row6__col--content-1__image" src="public/images/circle 6.png" alt="">
+                </div>
+        </div>
+        <div class="row6__col bg-tometo margin-top row6__col-min-height">
+            <div class="row6__col--content-1">
+                <h1>4</h1>
+                <p>Apothecary</p>
+                <p>by</p>
+                <p>Trent Walton</p>
+            </div>
+            <div class="row6__col--content-1">
+                <h1>8</h1>
+                <p>Verde Moderna</p>
+                <p>by</p>
+                <p>Dave Shea</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
